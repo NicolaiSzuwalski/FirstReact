@@ -5,6 +5,7 @@ import { PageTitle } from './components/pagetitle/pageTitle.jsx'
 import { Name } from './components/nameProps/name.jsx'
 import WaterFall from '../src/assets/images/waterfall.jpg'
 import { Image } from './components/Image/Image.jsx'
+import { ContentWrapper } from './components/ContentWrapper/ContentWrapper.jsx'
 
 
 
@@ -19,6 +20,10 @@ function App() {
         <PageTitle PageTitle= "Velkommen til min oste butik"></PageTitle>
         <Name Name="Robert"></Name>
         <Image file={WaterFall} alt='vandfald' />
+
+        <ContentWrapper title='Mit smukke galleri' subtitle='Og det er smukt'>
+          <Main></Main>
+        </ContentWrapper>
         
     </div>
   )
